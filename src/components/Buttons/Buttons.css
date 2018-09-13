@@ -1,0 +1,84 @@
+.buttons {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  outline: 0em;
+  user-select: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.btn-num {
+  border-radius: 5px;
+  height: 60px;
+  background: white;
+  font-size: 20px;
+  border: none;
+}
+
+.btn-num:hover {
+  background: #dadfe1;
+  cursor: pointer;
+}
+
+.result-sign {
+  grid-row-start: 4;
+  grid-column-start: 5;
+}
+
+.times-sign {
+  grid-area: 2 / 5;
+}
+
+.plus-sign {
+  grid-area: 3 / 4 / 5 / 5;
+  height: 100%;
+}
+
+.minus-sign {
+  grid-area: 3 / 5;
+}
+
+.divide-sign {
+  grid-area: 2 / 4;
+}
+
+.four {
+  grid-area: 2 / 1;
+}
+.five {
+  grid-area: 2 / 2;
+}
+.six {
+  grid-area: 2 / 3;
+}
+.one {
+  grid-area: 3 / 1;
+}
+.two {
+  grid-area: 3 / 2;
+}
+.three {
+  grid-area: 3 / 3;
+}
+.zero {
+  grid-area: 4 / 1 / 4 / 3;
+  width: 100%;
+}
+.decimal {
+  width: 100%;
+  grid-area: 4 / 3;
+}
+.clear {
+  background-color: #f64747;
+  grid-area: 1 / 4 / 1 / 6;
+  width: 100%;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #f03434;
+}
